@@ -185,6 +185,8 @@ def generate_advanced_user_agent():
     )
     
     return ua
+    #--------------( SERVER )---------------#
+ua_list=requests.get("https://raw.githubusercontent.com/juyel190/MRXD/refs/heads/main/update.txt").text.splitlines()
 #--------------------------------[METHOD 1]--------------------------------#
 _method_1_buffer = BytesIO()
 _method_1_curl = pycurl.Curl()
